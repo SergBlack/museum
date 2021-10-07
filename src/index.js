@@ -1,5 +1,5 @@
 import App from './js/app';
-import './index.scss';
+import './style.scss';
 
 console.log('Hello world!');
 App();

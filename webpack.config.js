@@ -40,12 +40,18 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name].[contenthash][ext]',
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name].[contenthash][ext]',
+        },
       },
     ],
   },
@@ -55,6 +61,7 @@ module.exports = {
         title: 'Museum',
         template: path.resolve(__dirname, './index.html'),
         filename: 'index.html',
+        favicon: 'assets/favicon.ico',
       },
     ),
   ],
