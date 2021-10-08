@@ -1,0 +1,53 @@
+@import './colors';
+
+.header {
+  height: 150px;
+  background-color: $dark-color;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 199px;
+  height: 33px;
+}
+
+.logo {
+  width: 49px;
+  height: 26px;
+  background-image: url('assets/images/logo.svg');
+  background-color: $dark-color;
+}
+
+.header {
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    :not(:last-child) {
+      margin-right: 55px;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      font-family: Roboto-Thin, sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 2px;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

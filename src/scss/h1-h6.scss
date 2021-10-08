@@ -1,0 +1,30 @@
+@import './colors';
+
+h1, h2 {
+  font-family: Forum, serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 5px;
+  color: $title-main-color;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 31px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 80px;
+  line-height: 90px;
+}
+
+.visiting-section,
+.video-section,
+.tickets-section,
+.contacts-section {
+  h2 {
+    color: $title-secondary-color;
+  }
+}

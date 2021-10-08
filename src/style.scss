@@ -1,4 +1,6 @@
 @import './scss/colors';
+@import 'scss/h1-h6';
+@import 'scss/header';
 
 @font-face {
   font-family: Roboto-Thin;
@@ -29,38 +31,6 @@ body {
   margin: 0 auto;
   padding: 0;
   height: 100vh;
-  width: 1440px;
-}
-
-.header {
-  border: 1px solid red;
-  height: 150px;
-  background-color: $dark-color;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.logo {
-  width: 49px;
-  height: 26px;
-  background-image: url('assets/images/logo.svg');
-  background-color: $dark-color;
-}
-
-h1 {
-  font-family: Forum, serif;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 31px;
-  letter-spacing: 5px;
-  color: $white;
 }
 
 .main {
@@ -84,6 +54,7 @@ h1 {
 
 .container {
   margin: 0 auto;
+  width: 1440px;
 }
 
 .footer {
